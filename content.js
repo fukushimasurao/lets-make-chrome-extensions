@@ -12,8 +12,8 @@ let ary = [];
 
 for (let i = 0; i < got_time.length; i++){
     let time = got_time[i].textContent;
-    // もし時間が記入されていたら、記述されている時間(string形式で書かれている)を
-    // うまいことDate object形式に変換して何分残業しているのか確認,配列にぶち込む。
+    // もし時間が記入されていたら、記述されている時間(string形式で書かれている)をうまいことDate object形式に変換
+    // 何分残業しているのか取得, 配列にぶち込む。
     if (time !== "") {
         let date = new Date("2020/1/1 " + time + ":00").getTime();
         ary.push(date - time_of_origin);
