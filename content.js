@@ -25,7 +25,7 @@ let total = ary.reduce(function(sum, element){
     return sum + element;
 }, 0);
 
-// 表示したいテキストを用意。totelはmsなので、確認しやすいような時間に変更（今回は「分」に変換）
+// 表示したいテキストを用意。totalはmsなので、確認しやすいような時間に変更（今回は「分」に変換）
 addElement.textContent = '今月の残業時間は' + total / 1000 / 60 + '分だよ';
 
 // 適当に、bodyにくっつける。
