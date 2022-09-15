@@ -8,6 +8,10 @@
 
 <https://yuki.world/how-to-develop-chrome-extension-basics/>
 
+インポートの仕方は、↑の
+> chrome拡張機能をchromeにインポート
+ってところ見てください。
+
 ## 注意
 
 ↑の記事を参考にしつつ、ご自身のchromeに直接本ファイルをぶちこんでください。
