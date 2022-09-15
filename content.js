@@ -1,5 +1,5 @@
 const body = document.querySelector('body')
-const addElement = document.createElement('h1');
+let addElement = document.createElement('h1');
 
 // 残業時間が記載されている箇所抜き出す
 const got_time = document.querySelectorAll(".table01__row > .table01__cell--time:nth-child(18)");
@@ -25,7 +25,7 @@ let total = ary.reduce(function(sum, element){
     return sum + element;
 }, 0);
 
-// 表示したいテキストを用意。
+// 表示したいテキストを用意。totelはmsなので、確認しやすいような時間に変更（今回は「分」に変換）
 addElement.textContent = '今月の残業時間は' + total / 1000 / 60 + '分だよ';
 
 // 適当に、bodyにくっつける。
