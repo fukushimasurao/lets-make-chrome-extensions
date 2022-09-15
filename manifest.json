@@ -1,0 +1,12 @@
+{
+    "name": "残業確認くん",
+    "description": "kintai.miteras.jpのページで、残業時間がわかるよ",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "js": ["content.js"],
+            "matches": ["https://kintai.miteras.jp/PTCS/work-condition/*"]
+        }
+    ]
+}
